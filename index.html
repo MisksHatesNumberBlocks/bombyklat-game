@@ -6,13 +6,23 @@
   </head>
   <body>
     <div id = "startUi">
-      <button id = "startGame" onClick = "placeholder()">Play</button>
+      <button id = "startGame" onClick = "playerCheck">Play</button>
       <button id = "gameMods" onClick = "placeholder()">Mods</button>
       <button id = "gameSettings" onClick = "placeholder()">Settings</button>
     </div>
     <script>
       function placeholder() {
         alert("Not done yet.")
+      }
+
+      function playerCheck() {
+        // Don't worry, these script will all be attached to script.js .
+        const warning = document.createElement("p")
+        const yes = document.createElement("button")
+        const no = document.createElement("button")
+        warning.textContent = "You look too new to the game. Do you want to play the tutorial?"
+        yes.textContent = "Yes"
+        no.textContent = "No"
       }
     </script>
   </body>
